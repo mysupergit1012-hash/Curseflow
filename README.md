@@ -11,7 +11,7 @@ Curseflow is a webcam-based hands-free cursor controller:
 - Windows/macOS/Linux with a webcam
 - Python 3.10+
 
-## Setup
+## Setup (Install once)
 
 ```powershell
 cd C:\Users\Abhishek\Curseflow
@@ -25,6 +25,13 @@ pip install -r requirements-desktop.txt
 ```powershell
 .\Start-Curseflow.cmd
 ```
+## To run in a fresh tab
+
+```powershell
+cd C:\Users\<admin_name>\Curseflow; .\.venv\Scripts\activate
+.\Start-Curseflow.cmd
+```
+
 
 Use `Activate` in the desktop dashboard to start system-wide cursor control. Press `Stop` in the dashboard,
 or press `q` or `Esc` in the OpenCV preview window, to exit the camera engine.
