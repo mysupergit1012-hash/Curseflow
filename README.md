@@ -56,5 +56,8 @@ py -3 curseflow.py --cursor-speed 1.2 --smoothing 0.3
 
 This repo now includes an `app.py` Vercel entrypoint that serves a browser dashboard instead of the earlier JSON placeholder.
 
-The dashboard can request webcam access from the user's browser with an `Activate Camera` button and display a live preview.
-It does not replace the desktop `curseflow.py` app's OS-level cursor control.
+The dashboard can request webcam access from the user's browser with an `Activate` button, track the index finger with
+MediaPipe Tasks Vision, show an on-page gesture cursor, and use double blinks to click workspace targets.
+
+Browser security still prevents a Vercel page from moving the operating system mouse pointer. The deployed app provides
+gesture control inside the web page; `curseflow.py` remains the desktop version for OS-level cursor control.
