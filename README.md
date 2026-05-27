@@ -54,8 +54,7 @@ py -3 curseflow.py --cursor-speed 1.2 --smoothing 0.3
 
 ## Vercel
 
-This repo now includes an `app.py` Vercel entrypoint so Vercel can deploy the repository without the
-"No python entrypoint found" error.
+This repo now includes an `app.py` Vercel entrypoint that serves a browser dashboard instead of the earlier JSON placeholder.
 
-That deployment does **not** run the actual cursor-control app. `curseflow.py` is a desktop application that
-needs local webcam access, an OpenCV window, and OS-level mouse control, which Vercel cannot provide.
+The dashboard can request webcam access from the user's browser with an `Activate Camera` button and display a live preview.
+It does not replace the desktop `curseflow.py` app's OS-level cursor control.
