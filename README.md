@@ -23,10 +23,17 @@ pip install -r requirements-desktop.txt
 ## Run
 
 ```powershell
-py -3 curseflow.py
+.\Start-Curseflow.cmd
 ```
 
-Press `q` or `Esc` to exit.
+Use `Activate` in the desktop dashboard to start system-wide cursor control. Press `Stop` in the dashboard,
+or press `q` or `Esc` in the OpenCV preview window, to exit the camera engine.
+
+You can also run the engine directly:
+
+```powershell
+py -3 curseflow.py
+```
 
 ## Useful tuning flags
 
