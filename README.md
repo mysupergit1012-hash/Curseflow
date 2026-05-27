@@ -66,7 +66,7 @@ py -3 curseflow.py --cursor-speed 1.2 --smoothing 0.3
 - If double-blink clicks are too sensitive, reduce `--double-blink-window`, increase `--short-blink-frames`, and/or lower `--eye-close-threshold`.
 - During calibration, keep your eyes naturally open and look at the screen.
 
-## Vercel
+## Vercel (Ignore the vercel application link, since it isn't working)
 
 This repo now includes an `app.py` Vercel entrypoint that serves a browser dashboard instead of the earlier JSON placeholder.
 
