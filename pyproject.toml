@@ -1,0 +1,8 @@
+[project]
+name = "curseflow"
+version = "0.1.0"
+description = "Desktop webcam cursor controller with a minimal Vercel entrypoint."
+requires-python = ">=3.10"
+
+[tool.vercel]
+entrypoint = "app.py"

@@ -17,7 +17,7 @@ Curseflow is a webcam-based hands-free cursor controller:
 cd C:\Users\Abhishek\Curseflow
 python -m venv .venv
 .\.venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements-desktop.txt
 ```
 
 ## Run
@@ -51,3 +51,11 @@ py -3 curseflow.py --cursor-speed 1.2 --smoothing 0.3
 - On first run, hand/face model files are downloaded automatically into `models/`.
 - If double-blink clicks are too sensitive, reduce `--double-blink-window`, increase `--short-blink-frames`, and/or lower `--eye-close-threshold`.
 - During calibration, keep your eyes naturally open and look at the screen.
+
+## Vercel
+
+This repo now includes an `app.py` Vercel entrypoint so Vercel can deploy the repository without the
+"No python entrypoint found" error.
+
+That deployment does **not** run the actual cursor-control app. `curseflow.py` is a desktop application that
+needs local webcam access, an OpenCV window, and OS-level mouse control, which Vercel cannot provide.

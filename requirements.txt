@@ -1,3 +1,2 @@
-mediapipe==0.10.33
-opencv-contrib-python==4.13.0.92
-pyautogui==0.9.54
+# Vercel deployment uses the stdlib-only app.py entrypoint.
+# Desktop dependencies live in requirements-desktop.txt.
